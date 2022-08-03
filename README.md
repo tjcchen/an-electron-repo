@@ -1,9 +1,9 @@
-## an-electron-repo
+## An-electron-repo
 A repo for electron relevant stuff
 
-## Website & Repo information
-website: https://www.electronjs.org/
-repo: https://github.com/electron/electron
+## Website & Repo Info
+Website: https://www.electronjs.org/  
+Repo: https://github.com/electron/electron
 
 ## License
 Apache 2.0
