@@ -13,5 +13,8 @@
     "demo"
   ],
   "author": "tjcchen",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "electron": "^20.0.1"
+  }
 }
