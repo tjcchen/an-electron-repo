@@ -9,6 +9,8 @@ const path = require('path');
 
 const createWindow = () => {
   // Create and control browser windows with BrowserWindow
+  // we used Electron's app and BrowserWindow modules to create a browser window
+  // that displays web content in a separate process 
   const win = new BrowserWindow({
     width: 800,
     height: 600,
