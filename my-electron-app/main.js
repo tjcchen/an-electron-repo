@@ -5,12 +5,16 @@
  * 
  */
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 const createWindow = () => {
   // Create and control browser windows with BrowserWindow
   const win = new BrowserWindow({
     width: 800,
-    height: 600
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
   });
 
   win.loadFile('index.html');
@@ -32,6 +36,7 @@ app.whenReady().then(() => {
 // MacOS closes all windows does not necessarily mean close the app
 // But on Window and Linux, closing all the windows means close the app
 app.on('window-all-closed', () => {
+  // darwin refers to MacOS
   if (process.platform !== 'darwin') {
     app.quit();
   }
